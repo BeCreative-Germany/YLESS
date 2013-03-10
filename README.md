@@ -1,4 +1,3 @@
-
 #YLESS
 YLESS (experimental) is a new concept to extends CSS with dynamic behavior such as variables, mixins, operations and 
 functions but it is very lightweight. YAML is a human-readable data serialization format it is a 
@@ -11,6 +10,8 @@ trouble to create languages to extend the css behaviour like 'simpleLESS' when w
 YLESS use the YAML-format it is very easy to read and to extend and the big factor for me is that YAML is not a nobody in the world
 of programming so i think lots of people will like it. You can write your own template function in pure Javascript and all variables or function
 are available:
+
+Notice: This project by me is very new and it has currently no status for publishing.
 
 ####Access of template variables
 `this.<variableName>`
