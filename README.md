@@ -24,7 +24,7 @@ are available:
 + Template functions (Javascript)
 + Variable calculation
 
-Notice: This project by me is very new and it has currently no status for publishing.
+Notice: This project from me is very new and it has currently no good status for publishing.
 
 ##Example (test.yless):
 ```YAML
