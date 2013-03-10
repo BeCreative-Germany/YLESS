@@ -1,6 +1,6 @@
 #YLESS
 YLESS (experimental) is a new concept to extends CSS with dynamic behavior such as variables, mixins, operations and 
-functions but it is very lightweight. YAML is a human-readable data serialization format it is a 
+functions but it is very lightweight and fast. YAML is a human-readable data serialization format it is a 
 superset of JSON and is very clear and comfortable. 
 Why we dont´t use a format which we already know and every day use? It use Javascript for function execution and calculation.
 
