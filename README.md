@@ -23,7 +23,6 @@ are available:
 + Mixins (property inheritance)
 + Template functions (Javascript)
 + Variable calculation
-+ Developed for NodeJs
 
 Notice: This project from me is very new and it has currently no good status for publishing.
 
