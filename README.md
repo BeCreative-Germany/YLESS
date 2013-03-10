@@ -11,12 +11,19 @@ YLESS use the YAML-format it is very easy to read and to extend and the big fact
 of programming so i think lots of people will like it. You can write your own template function in pure Javascript and all variables or function
 are available:
 
-Notice: This project by me is very new and it has currently no status for publishing.
 
 ####Access of template variables
 `this.<variableName>`
 ####Access of template functions in functions
 `this.functions.<functionsName>`
+
+
+###Features:
++ Variables
++ Mixins (property inheritance)
++ Template functions (Javascript)
+
+Notice: This project by me is very new and it has currently no status for publishing.
 
 ##Example (test.yless):
 ```YAML
