@@ -23,8 +23,12 @@ are available:
 + Mixins (property inheritance)
 + Template functions (Javascript)
 + Variable calculation
++ Developed for NodeJs
 
 Notice: This project from me is very new and it has currently no good status for publishing.
+
+###Use of opensource:
++ Big thanks to Vitaly Puzrin [js-yaml](https://github.com/puzrin)
 
 ##Example (test.yless):
 ```YAML
