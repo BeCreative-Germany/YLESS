@@ -27,7 +27,7 @@ are available:
 Notice: This project from me is very new and it has currently no good status for publishing.
 
 ###Use of opensource:
-+ Big thanks to Vitaly Puzrin [js-yaml](https://github.com/puzrin)
++ Big thanks to nodeca [js-yaml](https://github.com/puzrin)
 
 ##Example (test.yless):
 ```YAML
