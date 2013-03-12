@@ -139,6 +139,10 @@ background-color: #FFFFF;
 width: 250.5px;
 }
 ```
+##Compress (with -c parsing option)
+```CSS
+div#test li.base{font-weight:bold;font-size:4em;}div#test li.sub{color:#DEDEDE;width:250.5px;height:254px;max-height:510px;max-width:594px;padding:3px 4px 2px 1px;font-weight:bold;font-size:4em;background-color:red;}.redBackground{background-color:red;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}.rounded-borders{border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}div#foobar li {background-color: #FFFFF;width: 250.5px;}
+```
 ##License
 (The MIT License)
 
