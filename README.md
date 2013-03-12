@@ -25,10 +25,10 @@ Notice: YLESS allows only the use of one function for one selector property (str
 
 
 ##Features:
-+ Variables
-+ Mixins (property inheritance)
-+ Template functions (Javascript)
-+ Variable calculation
+- [x] Variables
+- [x] Mixins (property inheritance)
+- [x] Template functions (Javascript)
+- [x] Variable calculation
 
 ##Error reporting
 By the reason of the simpleness of the translator errors are hard to report becouse the translator doesn´t parse any value but only
