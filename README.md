@@ -98,9 +98,9 @@ font-size:4em;
 div#test li.sub{
 color:#DEDEDE;
 width:250.5px;
-height:250px;
+height:254px;
 max-height:510px;
-max-width:587.5px;
+max-width:594px;
 padding:3px 4px 2px 1px;
 font-weight:bold;
 font-size:4em;
@@ -120,6 +120,7 @@ border-radius:5px;
 div#foobar {
 background-color: #FFFFF;
 width: 250.5px;
+}
 }
 ```
 
