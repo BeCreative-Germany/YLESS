@@ -43,7 +43,7 @@ Runtime:
   variables:
     color :  "#DEDEDE"
     width :  150.50px + 100px
-    height : 250px
+    height : (250px + 3) + 1
     radius:  5px
 
 #############Selectors##############
@@ -59,7 +59,7 @@ Selectors:
     width : $width #Access of variables in selectors
     height : $height
     max-height : (20 + 150px ) * 3
-    max-width : maxWidth(54,33,$width) #Use Javascript function for calculations
+    max-width : maxWidth(54,33,$width + 2*(13-10)) #Use Javascript function for calculations
     padding: 3px 4px 2px 1px
     $extends : 'div#test li.base, .redBackground'  #(mixins)
 
@@ -86,6 +86,7 @@ RawCSS: |
   background-color: #FFFFF;
   width: $width;
   }
+
 ```
 ##Output:
 
