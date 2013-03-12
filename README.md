@@ -4,8 +4,8 @@ functions it is very simple,lightweight and fast. YAML is a human-readable data 
 superset of JSON and is very clear and comfortable. 
 Why we dont´t use a format which we already know and every day use? It use YAML as alternative for the CSS Markup language and Javascript for function execution and calculation.
 
-I´m not very experience developer in parsing or compiling. My idea behind this project is that why we take the 
-trouble to create languages to extend the css behaviour like 'simpleLESS' when we have already all present.
+I´m not very experience developer in parsing or compiling. My idea behind this project is why we take the 
+trouble to create new languages to extend the css behaviour like 'simpleLESS' when we have already all present.
 
 YLESS use the YAML-format it is very easy to read and to extend and the big factor for me is that YAML is not a nobody in the world
 of programming so i think lots of people will like it. You can write your own template function in pure Javascript and all variables or function
@@ -35,6 +35,9 @@ Notice: YLESS allows only the use of one function for one selector property (str
 + some improvements
 
 Notice: This project from me is very new and it has currently no good status for publishing.
+
+###Units (px|em|cm|in|mm|ex|pt|pc|%)
+The parser works from left to right so the first unit which is found is used for the whole caculation.
 
 ###Big thanks to the contributors of these awesome opensource software:
 + js-yaml [nodeca](https://github.com/nodeca/)
