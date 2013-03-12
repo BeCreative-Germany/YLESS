@@ -15,11 +15,11 @@ are available:
 ####Access of template variables in functions
 `this.<variableName>`
 ####Access of template functions in functions
-`this.functions.<functionsName>`
+`this.call(<functionsName>,<Args>)`
 
-####Access of template variables
+####Use of template variables
 `$<variableName>`
-####Access of template functions
+####Use of template functions
 `<functionName>(args ...)`
 Notice: YLESS allows only the use of one function for one selector property (strong style guideline)
 
@@ -30,10 +30,14 @@ Notice: YLESS allows only the use of one function for one selector property (str
 + Template functions (Javascript)
 + Variable calculation
 
-###TODO
-+ Error handling
-+ Unit conversion
-+ some improvements
+##Error reporting
+By the reason of the simpleness of the translator errors are hard to report becouse the translator doesn´t parse any value but only
+function calls and calculations. Follwing error reports are supported:
+- Function existence
+- Right count of functions arguments
+- Extends selectors existence
+- Variable existence
+
 
 Notice: This project from me is very new and it has currently no good status for publishing.
 
@@ -113,7 +117,7 @@ Functions:
     }
   foobar: !!js/function >
     function () {
-      return 10 + this.radius + 'px';
+      return this.call('maxWidth',1,2,3);
     }
 
 #For raw CSS with only variables 
@@ -133,7 +137,7 @@ font-size:4em;
 div#test li.sub{
 color:#DEDEDE;
 width:250.5em;
-height:15px;
+height:256.5;
 max-height:510px;
 max-width:594em;
 padding:3px 4px 2px 1px;
@@ -160,7 +164,7 @@ width: 250.5em;
 ```
 ##Compress (with -c parsing option)
 ```CSS
-div#test li.base{font-weight:bold;font-size:4em;}div#test li.sub{color:#DEDEDE;width:250.5em;height:15px;max-height:510px;max-width:594em;padding:3px 4px 2px 1px;font-weight:bold;font-size:4em;background-color:red;}.redBackground{background-color:red;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}.rounded-borders{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}div#foobar li {background-color: #FFFFF;width: 250.5em;}
+div#test li.base{font-weight:bold;font-size:4em;}div#test li.sub{color:#DEDEDE;width:250.5em;height:256.5;max-height:510px;max-width:594em;padding:3px 4px 2px 1px;font-weight:bold;font-size:4em;background-color:red;}.redBackground{background-color:red;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}.rounded-borders{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}div#foobar li {background-color: #FFFFF;width: 250.5em;}
 ```
 ##License
 (The MIT License)
