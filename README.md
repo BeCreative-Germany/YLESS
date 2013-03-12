@@ -18,7 +18,7 @@ are available:
 `this.functions.<functionsName>`
 
 
-###Features:
+##Features:
 + Variables
 + Mixins (property inheritance)
 + Template functions (Javascript)
@@ -29,11 +29,10 @@ Notice: This project from me is very new and it has currently no good status for
 ###Use of opensource:
 + Big thanks to nodeca [js-yaml](https://github.com/puzrin)
 
-###Option parsing
+##Option parsing
 ```
-example: ./yless2.js -i "css/test.yless" -o "test.css" -c
 
-  Usage: yless.js [options]
+  Usage: yless.js [options] -i <input> -o <output>
 
   Options:
 
@@ -45,7 +44,8 @@ example: ./yless2.js -i "css/test.yless" -o "test.css" -c
 
 
 ```
-
+####Example
+`./yless.js -i "yless/test.yless" -o "css/test.css"`
 ##Example (test.yless):
 ```YAML
 #YLESS Translator
@@ -137,7 +137,6 @@ border-radius:5px;
 div#foobar {
 background-color: #FFFFF;
 width: 250.5px;
-}
 }
 ```
 
