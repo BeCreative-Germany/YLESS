@@ -19,7 +19,7 @@ are available:
 
 ####Use of template variables
 `$<variableName>`
-####Use of template functions
+####Use of template functions as property value
 `<functionName>(args ...)`
 Notice: YLESS allows only the use of one function for one selector property (strong style guideline)
 
