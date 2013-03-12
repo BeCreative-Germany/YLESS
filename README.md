@@ -29,6 +29,22 @@ Notice: This project from me is very new and it has currently no good status for
 ###Use of opensource:
 + Big thanks to nodeca [js-yaml](https://github.com/puzrin)
 
+```
+example: ./yless2.js -i "css/test.yless" -o "test.css" -c
+
+  Usage: yless.js [options]
+
+  Options:
+
+    -h, --help          output usage information
+    -V, --version       output the version number
+    -i, --ifile <path>  Input YAML file
+    -o, --ofile <path>  Output CSS file
+    -c, --compress      Compress CSS
+
+
+```
+
 ##Example (test.yless):
 ```YAML
 #YLESS Translator
