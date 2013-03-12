@@ -26,8 +26,9 @@ are available:
 
 Notice: This project from me is very new and it has currently no good status for publishing.
 
-###Use of opensource:
-+ Big thanks to nodeca [js-yaml](https://github.com/puzrin)
+###Big thanks to the contributors of these awesome opensource software:
++ js-yaml [nodeca](https://github.com/nodeca/)
++ commander.js [visionmedia](https://github.com/visionmedia/)
 
 ##Option parsing
 ```
@@ -53,7 +54,7 @@ Notice: This project from me is very new and it has currently no good status for
 # Translator Information
 Translator:
   Author : Dustin Deus
-  Version  : "1.0"
+  Version  : "0.0.1"
 
 #Declare custom variables
 Runtime:
@@ -61,7 +62,7 @@ Runtime:
     color :  "#DEDEDE"
     width :  150.50px + 100px
     height : (250px + 3) + 1
-    radius:  5px
+    radius:  6px
 
 #############Selectors##############
 Selectors:
@@ -103,7 +104,6 @@ RawCSS: |
   background-color: #FFFFF;
   width: $width;
   }
-
 ```
 ##Output:
 
@@ -125,22 +125,39 @@ background-color:red;
 }
 .redBackground{
 background-color:red;
-border-radius:5px;
--moz-border-radius:5px;
--webkit-border-radius:5px;
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
 }
 .rounded-borders{
-border-radius:5px;
--moz-border-radius:5px;
--webkit-border-radius:5px;
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
 }
 div#foobar {
 background-color: #FFFFF;
 width: 250.5px;
 }
 ```
+##License
+(The MIT License)
 
-###TODO:
-+ Error reporting 
-+ Function handling
-+ Unit convertion
+Copyright (C) 2013 by Dustin Deus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
