@@ -1,6 +1,6 @@
 #YLESS
 YLESS (experimental) is a new concept to extends CSS with dynamic behavior such as variables, mixins, operations and 
-functions it is very lightweight and fast. YAML is a human-readable data serialization format it is a 
+functions it is very simple,lightweight and fast. YAML is a human-readable data serialization format it is a 
 superset of JSON and is very clear and comfortable. 
 Why we dont´t use a format which we already know and every day use? It use YAML for the alternative CSS Markup language and Javascript for function execution and calculation.
 
@@ -12,10 +12,16 @@ of programming so i think lots of people will like it. You can write your own te
 are available:
 
 
-####Access of template variables
+####Access of template variables in functions
 `this.<variableName>`
 ####Access of template functions in functions
 `this.functions.<functionsName>`
+
+####Access of template variables
+`$<variableName>`
+####Access of template functions
+`<functionName>(args ...)`
+Notice: YLESS allows only the use of one function for one selector property (strong styleguide)
 
 
 ##Features:
