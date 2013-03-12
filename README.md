@@ -2,7 +2,7 @@
 YLESS (experimental) is a new concept to extends CSS with dynamic behavior such as variables, mixins, operations and 
 functions it is very simple,lightweight and fast. YAML is a human-readable data serialization format it is a 
 superset of JSON and is very clear and comfortable. 
-Why we dont´t use a format which we already know and every day use? It use YAML for the alternative CSS Markup language and Javascript for function execution and calculation.
+Why we dont´t use a format which we already know and every day use? It use YAML as alternative for the CSS Markup language and Javascript for function execution and calculation.
 
 I´m not very experience developer in parsing or compiling. My idea behind this project is that why we take the 
 trouble to create languages to extend the css behaviour like 'simpleLESS' when we have already all present.
