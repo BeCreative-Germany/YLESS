@@ -74,9 +74,9 @@ Translator:
 Runtime:
   variables:
     color :  "#DEDEDE"
-    width :  150.50px + 100px
+    width :  150.50em + 100px
     height : (250px + 3) + 1
-    radius:  6px
+    radius:  5px
 
 #############Selectors##############
 Selectors:
@@ -89,7 +89,7 @@ Selectors:
   div#test li.sub:
     color : "#DEDEDE"
     width : $width #Access of variables in selectors
-    height : $height
+    height : foobar()
     max-height : (20 + 150px ) * 3
     max-width : maxWidth(54,33,$width + 2*(13-10)) #Use Javascript function for calculations
     padding: 3px 4px 2px 1px
@@ -111,10 +111,14 @@ Functions:
     function (v,c,n) {
       return this.width + v + c + n; //Access of variables in Javascript
     }
+  foobar: !!js/function >
+    function () {
+      return 10 + this.radius + 'px';
+    }
 
 #For raw CSS with only variables 
 RawCSS: |
-  div#foobar {
+  div#foobar li {
   background-color: #FFFFF;
   width: $width;
   }
@@ -128,10 +132,10 @@ font-size:4em;
 }
 div#test li.sub{
 color:#DEDEDE;
-width:250.5px;
-height:254px;
+width:250.5em;
+height:15px;
 max-height:510px;
-max-width:594px;
+max-width:594em;
 padding:3px 4px 2px 1px;
 font-weight:bold;
 font-size:4em;
@@ -139,23 +143,24 @@ background-color:red;
 }
 .redBackground{
 background-color:red;
-border-radius:6px;
--moz-border-radius:6px;
--webkit-border-radius:6px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
 }
 .rounded-borders{
-border-radius:6px;
--moz-border-radius:6px;
--webkit-border-radius:6px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
 }
-div#foobar {
+div#foobar li {
 background-color: #FFFFF;
-width: 250.5px;
+width: 250.5em;
 }
+
 ```
 ##Compress (with -c parsing option)
 ```CSS
-div#test li.base{font-weight:bold;font-size:4em;}div#test li.sub{color:#DEDEDE;width:250.5px;height:254px;max-height:510px;max-width:594px;padding:3px 4px 2px 1px;font-weight:bold;font-size:4em;background-color:red;}.redBackground{background-color:red;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}.rounded-borders{border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}div#foobar li {background-color: #FFFFF;width: 250.5px;}
+div#test li.base{font-weight:bold;font-size:4em;}div#test li.sub{color:#DEDEDE;width:250.5em;height:15px;max-height:510px;max-width:594em;padding:3px 4px 2px 1px;font-weight:bold;font-size:4em;background-color:red;}.redBackground{background-color:red;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}.rounded-borders{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}div#foobar li {background-color: #FFFFF;width: 250.5em;}
 ```
 ##License
 (The MIT License)
