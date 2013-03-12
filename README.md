@@ -21,7 +21,7 @@ are available:
 `$<variableName>`
 ####Access of template functions
 `<functionName>(args ...)`
-Notice: YLESS allows only the use of one function for one selector property (strong styleguide)
+Notice: YLESS allows only the use of one function for one selector property (strong style guideline)
 
 
 ##Features:
@@ -29,6 +29,10 @@ Notice: YLESS allows only the use of one function for one selector property (str
 + Mixins (property inheritance)
 + Template functions (Javascript)
 + Variable calculation
+
+###TODO
++ Error handling
++ some improvements
 
 Notice: This project from me is very new and it has currently no good status for publishing.
 
