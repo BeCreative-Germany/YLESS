@@ -61,7 +61,7 @@ The parser works from left to right so the first unit which is found is used for
 ```
 ####Example
 `./yless.js -i "yless/test.yless" -o "css/test.css"`
-##Example (test.yless):
+##Example CSS in YAML:
 ```YAML
 #YLESS Translator
 
@@ -119,7 +119,7 @@ RawCSS: |
   width: $width;
   }
 ```
-##Output:
+##Output by YLESS:
 
 ```CSS
 div#test li.base{
