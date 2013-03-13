@@ -31,6 +31,11 @@ Notice: YLESS allows only the use of one function for one selector property (str
 - [x] Template functions (Javascript)
 - [x] Variable calculation
 
+##TODO
+- [ ] File importing
+- [ ] Better error reporting
+- [ ] Multiple file parsing
+
 ##Error reporting
 By the reason of the simpleness of the translator errors are hard to report becouse the translator doesn´t parse any value but only
 function calls and calculations. Follwing error reports are supported:
