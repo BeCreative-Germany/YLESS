@@ -1,4 +1,5 @@
-#YLESS
+![YLESS](http://starp-germany.de/blog/wp-content/uploads/2013/03/yless1.jpg)
+
 YLESS (experimental) is a new concept to extends CSS with dynamic behavior such as variables, mixins, operations and 
 functions it is very simple,lightweight and fast. YAML is a human-readable data serialization format it is a 
 superset of JSON and is very clear and comfortable. 
