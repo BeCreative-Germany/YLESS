@@ -44,7 +44,7 @@ function calls and calculations. Follwing error reports are supported:
 - Extends selectors existence
 - Variable existence
 
-##With EventBase debugging mode (parsing option -d)
+##Event-base debugging mode (parsing option -d)
 ```CSS
 Event: extendSelector with:  div#test li.sub extends by div#test li.base
 Event: extendSelector with:  div#test li.sub extends by .redBackground
