@@ -33,7 +33,7 @@ Notice: YLESS allows only the use of one function for one selector property (str
 
 ##TODO
 - [ ] File importing by `$import: <files>`
-- [X] Better error reporting `Èvent-base debuging`
+- [X] Better error reporting `Èvent-base debugging`
 - [ ] Multiple file parsing
 
 ##Error reporting
