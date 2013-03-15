@@ -153,7 +153,7 @@ Functions:
     }
   foobar: !!js/function >
     function () {
-      return this.call('maxWidth',1,2,3);
+      return this.call('maxWidth',1,2,3) + 'px';
     }
 
 #For raw CSS with only variables 
@@ -173,7 +173,7 @@ font-size:4em;
 div#test li.sub{
 color:#DEDEDE;
 width:250.5em;
-height:256.5;
+height:256.5px;
 max-height:510px;
 max-width:594em;
 padding:3px 4px 2px 1px;
