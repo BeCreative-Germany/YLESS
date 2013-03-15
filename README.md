@@ -32,8 +32,8 @@ Notice: YLESS allows only the use of one function for one selector property (str
 - [x] Variable calculation
 
 ##TODO
-- [ ] File importing
-- [ ] Better error reporting
+- [ ] File importing by `$import: <files>`
+- [X] Better error reporting `Èvent-base debuging`
 - [ ] Multiple file parsing
 
 ##Error reporting
