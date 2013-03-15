@@ -44,6 +44,36 @@ function calls and calculations. Follwing error reports are supported:
 - Extends selectors existence
 - Variable existence
 
+##With EventBase debugging mode (parsing option -d)
+```
+Event: extendSelector with:  div#test li.sub extends by div#test li.base
+Event: extendSelector with:  div#test li.sub extends by .redBackground
+Event: extendSelector with:  .redBackground extends by .rounded-borders
+Event: recognizeEquation with:  150.50em + 100px
+Event: evalEquation with:  150.50 + 100
+Event: recognizeEquation with:  1*(250px + 3) + 1
+Event: evalEquation with:  1*(250 + 3) + 1
+Event: replaceVariableRaw with:  $width replaced by "250.5em"
+Event: recognizeEquation with:  3em + 1em
+Event: evalEquation with:  3 + 1
+Event: replaceVariable with:  $width replaced by "250.5em"
+Event: startFuncArguments with:  [ '' ]
+Event: functionCall with: Name: maxWidth , Arguments: 1,2,3
+Event: recognizeEquation with:  (20 + 150px ) * 3
+Event: evalEquation with:  (20 + 150 ) * 3
+Event: replaceVariable with:  $width replaced by "250.5em"
+Event: startFuncArguments with:  [ '54', '33', '250.5em + 2*(13-10)' ]
+Event: evalEquation with:  250.5 + 2*(13-10)
+Event: afterExecFuncArguments with:  [ 54, 33, 256.5 ]
+Event: recognizeEquation with:  3em + 1em
+Event: evalEquation with:  3 + 1
+Event: replaceVariable with:  $radius replaced by "5px"
+Event: replaceVariable with:  $radius replaced by "5px"
+Event: replaceVariable with:  $radius replaced by "5px"
+Event: replaceVariable with:  $radius replaced by "5px"
+Event: replaceVariable with:  $radius replaced by "5px"
+Event: replaceVariable with:  $radius replaced by "5px"
+```
 
 Notice: This project from me is very new and it has currently no good status for publishing.
 
@@ -66,7 +96,7 @@ The parser works from left to right so the first unit which is found is used for
     -i, --ifile <path>  Input YAML file
     -o, --ofile <path>  Output CSS file
     -c, --compress      Compress CSS
-
+    -d, --debug         Debug-mode
 
 ```
 ####Example
